@@ -1,18 +1,19 @@
 ---
-title: gitment
+title: 利用gitment给hexo blog添加评论
 date: 2017-11-21 00:52:47
 categories:
-- blog
+- web
 tags:
 - blog
+- gitment
 ---
-## gitment
+## Gitment
 
-**gitment** 是[Sun][https://imsun.net/posts/gitment-introduction/]借助github的issues 做的评论组件，在duoshuo服务停用和disqus需要翻墙的境况下，gitment不失为一种暂时的评论技术方案。关于hexo的next主题如何引进gitment，[这里][http://colabug.com/273427.html] 有比较详细的介绍，但有些复杂，其实现在gitment已被next加入配置直接支持，引入其实非常简单。
+**Gitment** 是[Sun](https://imsun.net/posts/gitment-introduction)借助github的issues 做的评论组件，在duoshuo服务停用和disqus需要翻墙的境况下，gitment不失为一种暂时的评论技术方案。关于hexo的next主题如何引进gitment，[这里](http://colabug.com/273427.html) 有比较详细的介绍，但有些复杂，其实现在gitment已被next加入配置直接支持，引入其实非常简单。
 
 - 注册github application
 
-  > 点击<https://github.com/settings/applications/new>注册，注意`Authorization callback URL`填自己的网站url 如 `http://mocksaber.com`.记下**Client ID**和**Client Secret**.
+  > 点击<https://github.com/settings/applications/new>注册，注意`Authorization callback URL`填自己的网站url 如 `http://mocksaber.com`.记下*Client ID*和*Client Secret*.
 
 - 修改 `themes/next/_config.yml`  
 
@@ -35,4 +36,4 @@ tags:
 
   ```
 
-- 正常来说就可以了，重新部署后对有个显示评论的按钮，现在没篇文章都需要做初始化，后面看gitment的作者有没有后续的简单解决方案。
+- 正常来说到这里就可以了，重新部署后会在文章下面有个显示评论的按钮，现在每篇文章都需要做初始化，后面看gitment的作者有没有后续的简单解决方案。
